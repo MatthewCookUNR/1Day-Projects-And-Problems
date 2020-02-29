@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>CSS Specificity Examples</title>
+    <link href="styles.css" type="text/css" rel="stylesheet">
+  </head>
+  
+  <body>
+    <h1>CSS Specificity</h1>
+    <table>
+      <thead>
+        <th>Selector</th>
+        <th>Selected</th>
+        <th>Specificity</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="example">div</td>
+          <td>all elements</td>
+          <td>low</td>
+        </tr>
+        <tr>
+          <td class="example">p</td>
+          <td>all elements</td>
+          <td>low</td>
+        </tr>
+        <tr>
+          <td class="example">.title</td>
+          <td>only elements in class</td>
+          <td>medium</td>
+        </tr>
+        <tr>
+          <td class="example">.snacks p</td>
+          <td>only elements in parent and in class</td>
+          <td>high</td>
+        </tr>
+        <tr>
+          <td class="example">.context div</td>
+          <td>only elements in parent and in class</td>
+          <td>high</td>
+        </tr>
+        <tr>
+          <td class="example">#matt</td>
+          <td>only 1 element with id</td>
+          <td>highest</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+  
+</html>

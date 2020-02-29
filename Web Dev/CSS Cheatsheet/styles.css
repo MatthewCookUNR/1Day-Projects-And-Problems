@@ -1,0 +1,31 @@
+body {
+  background-color: Gainsboro;
+  font-family: Arial;
+}
+
+h1 {
+  font-size: 48px;
+  text-align: center;
+  color: LightSeaGreen;
+}
+
+table {
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+td {
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+}
+
+th {
+  font-weight: bold;
+  font-size: 24px;
+  background-color: GreenYellow;
+}
+
+.example {
+  font-weight: bold;
+  background-color: LavenderBlush;
+}
