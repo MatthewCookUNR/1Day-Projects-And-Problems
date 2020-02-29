@@ -1,2 +1,2 @@
-# Matts-Practice-Code
-The repository holds the code for various projects or practice problems that have been completed as a fun way to freshen up on coding skills and research code exercises for future teaching.
+# 1Day-Projects-And-Problems
+The repository holds the code for various small projects or programming problems. They were completed for the benefit of my own learning and to research possible teaching material in the future.
