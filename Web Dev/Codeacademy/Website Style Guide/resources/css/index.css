@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Universal */
+header {
+  text-align: center;
+}
+
+img {
+  height: 100px;
+  width: 100px;
+}
+
+h1, h2, p {
+  margin-left: 20px;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 28px;
+  font-family: "Poppins";
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 24px;
+  font-family: "Nunito";
+}
+
+p {
+  font-weight: 400;
+  font-size: 14px;
+  font-family: "Ubuntu";
+}
+
+div {
+  margin: 10px;
+}
+
+li {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  border: 4px solid darkcyan;
+}
+
+/* Colors */
+
+.color-list li {
+  display:inline-block;
+  text-align: center;
+  line-height: 3;
+  margin:20px;
+  color: white;
+  font-weight: bold;
+  padding: 40px;
+  height: 175px;
+  width: 325px;
+}
+
+.djPurple {
+  background-color: #4B1EA5;
+}
+
+.color-list .springGreen {
+  color: rgb(0, 0, 0);
+  background-color: #00FF7F;
+}
+
+.hotPink {
+  background-color: #FF69B4;
+}
+
+.color-list .deepSkyBlue {
+  color: rgb(0, 0, 0);
+  background-color: #00BFFF;
+}
+
+.pink {
+  color: rgb(0, 0, 0);
+  background-color: #FFC0CB;
+}
+
+.crimson {
+  background-color: #DC143C;
+}
+
+/* Fonts */
+
+.font-panel {
+  display: inline-block;
+  margin: 20px;
+}
+
+.head-nunito, .regular-nunito, .bold-nunito, .italic-nunito {
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+}
+
+.head-nunito {
+  text-decoration: underline;
+}
+
+.bold-nunito {
+  font-weight: bold;
+}
+
+.italic-nunito {
+  font-style: italic;
+}
+
+.head-poppins, .regular-poppins, .bold-poppins, .italic-poppins {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+}
+
+.head-poppins {
+  text-decoration: underline;
+  line-height: 1;
+}
+
+.bold-poppins {
+  font-weight: bold;
+}
+
+.italic-poppins {
+  font-style: italic;
+}
+
+.head-roboto, .regular-roboto, .bold-roboto, .italic-roboto {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+
+.head-roboto {
+  text-decoration: underline;
+}
+
+.bold-roboto {
+  font-weight: bold;
+}
+
+.italic-roboto {
+  font-style: italic;
+}
+
+.head-ubuntu, .regular-ubuntu, .bold-ubuntu, .italic-ubuntu {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+}
+
+.head-ubuntu {
+  text-decoration: underline;
+}
+
+.bold-ubuntu {
+  font-weight: bold;
+}
+
+.italic-ubuntu {
+  font-style: italic;
+}
+
+/* Font Styles */
+
+.font-bullets {
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  line-height: 2;
+}
