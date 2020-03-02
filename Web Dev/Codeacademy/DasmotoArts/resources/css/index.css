@@ -6,7 +6,7 @@ h1 {
   font-size: 100px;
   color: khaki;
   text-align: center;
-  background-image: url("../resources/pattern.jpeg");
+  background-image: url("../images/pattern.jpeg");
 }
 
 .item h2 {
