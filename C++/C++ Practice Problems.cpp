@@ -11,6 +11,7 @@ using namespace std;
 void problem1();
 void problem2();
 int findMaxEvents(vector<int> startTimes, vector<int> endTimes);
+int* twoSum(int array[], int size, int sum);
 
 int main()
 {
@@ -19,7 +20,8 @@ int main()
 		int selection;
 		cout << "Welcome to my practice problems tester in C++" << endl << endl;
 		cout << "1. User inputs 2 groups of integers with duplicates -> display common numbers between them" << endl;
-		cout << "2. User inputs a number of events w/ start and end times -> display max concurrent events " << endl << endl;
+		cout << "2. User inputs a number of events w/ start and end times -> display max concurrent events " << endl;
+		cout << "3. Function finds indices of two numbers that add up to sum in a array" << endl << endl;
 		cout << "Please enter the number for the one you would like to run: ";
 		cin >> selection;
 		cout << endl;
@@ -30,6 +32,24 @@ int main()
 		else if (selection == 2)
 		{
 			problem2();
+		}
+		else if (selection == 3)
+		{
+			int array[6] = { 2, 5, 7, 13, 3, 6 };
+			int size = sizeof(array) / sizeof(int);
+			int * yet = twoSum(array, size, 8);
+			if (yet[0] != -1)
+			{
+				for (int i = 0; i < 2; i++)
+				{
+					cout << "Index " << i << ": " << yet[i] << " ";
+				}
+				cout << endl;
+			}
+			else
+			{
+				cout << "Sum not found in array" << endl;
+			}
 		}
 	}
 }
@@ -55,7 +75,6 @@ void problem1()
 	for (int i = 0; i < mySize; i++)
 	{
 		cin >> input;
-		cout << input << endl;
 		groupMap1[input] = i;
 	}
 
@@ -68,7 +87,6 @@ void problem1()
 	for (int i = 0; i < mySize; i++)
 	{
 		cin >> input;
-		cout << input << endl;
 		group2Vector.push_back(input);
 	}
 
@@ -166,4 +184,30 @@ int findMaxEvents(vector<int> startTimes, vector<int> endTimes)
 		currentEvent++;
 	}
 	return maxConcurrent;
+}
+
+//Function finds the indices of two numbers in the
+//given array that add up to the sum and returns
+//them in the form of a array
+int* twoSum(int array[], int size, int sum)
+{
+	unordered_map<int, int> umap;
+	for (int i = 0; i < size; i++)
+	{
+		if (umap.find(sum - array[i]) != umap.end())
+		{
+			int index = umap.find(sum - array[i])->second;
+			int* sum = new int[2];
+			sum[0] = i;
+			sum[1] = index;
+			return sum;
+		}
+		else
+		{
+			umap[array[i]] = i;
+		}
+	}
+	int * noSum = new int[1];
+	noSum[0] = -1;
+	return noSum;
 }
