@@ -1,0 +1,93 @@
+/* Body */
+body {
+  background-color: #010165;
+  margin: 0px;
+}
+
+/* Header */
+.header {
+  background-color: #00ffff;
+  text-align: center;
+}
+
+/* Title */
+.title-row {
+  margin-top: 42px;
+  margin-bottom: 21px;
+  text-align: center;
+}
+
+/* Instructions table  */
+.instructions-title {
+  font-size: 18px;
+  color: #00ffff;
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline;
+}
+
+.instructions-row {
+  margin: 0 auto;
+  width: 400px;
+}
+
+.instructions-number {
+  font-size: 36px;
+  color: #00ffff;
+  padding-right: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.instructions-text {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+}
+
+/* Doors */
+.door-row {
+  text-align: center;
+}
+
+.door-frame {
+  cursor: pointer;
+  padding: 10px;
+}
+
+/* Start Button */
+.start-row {
+  margin: auto;
+  height: 40px;
+  width: 120px;
+  padding: 40px 0;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #eb6536;
+  color: #010165;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Streak table */
+.streak-row {
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.streak-text {
+  color: #ffffff;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline-block;
+  margin: 5px 19px;
+}
+
+.streak-box {
+  font-size: 48px;
+  display: inline-block;
+  text-align: center;
+  margin: 5px 20px;
+  width: 100px;
+  height: 40px;
+  padding: 30px 0;
+  background-color: #00ffff;
+}
